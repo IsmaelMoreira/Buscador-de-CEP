@@ -1,0 +1,114 @@
+/* Modo escuro */
+body {
+  background-color: #343a40;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Container principal */
+.container {
+  background-color: #495057;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Título */
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Campo de entrada */
+.form-control {
+  background-color: #6c757d;
+  border: 1px solid #ced4da;
+  color: #fff;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.form-control:focus {
+  background-color: #6c757d;
+  border-color: #80bdff;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+/* Botão */
+.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+  border-color: #004085;
+}
+
+.btn-primary:focus, .btn-primary:active {
+  background-color: #0056b3;
+  border-color: #004085;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
+}
+
+/* Resultado */
+#resultado {
+  background-color: #6c757d;
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s;
+}
+
+#resultado p {
+  margin: 0;
+}
+
+#resultado p + p {
+  margin-top: 10px;
+}
+
+/* Remover botões de incremento/decremento dos campos numéricos */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Estilos adicionais para alertas */
+.alert {
+  padding: 20px;
+  background-color: #f44336;
+  color: white;
+  margin-bottom: 15px;
+}
+
+.alert.success {
+  background-color: #4CAF50;
+}
+
+.alert.info {
+  background-color: #2196F3;
+}
+
+.alert.warning {
+  background-color: #ff9800;
+}
+
+/* Mapa */
+#map {
+  height: 400px;
+  width: 100%;
+  margin-top: 20px;
+}
