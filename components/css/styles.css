@@ -101,7 +101,6 @@ input[type="number"]::-webkit-inner-spin-button {
 .alert.info {
   background-color: #2196F3;
 }
-
 .alert.warning {
   background-color: #ff9800;
 }
